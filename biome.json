@@ -1,0 +1,21 @@
+{
+  "$schema": "https://biomejs.dev/schemas/2.2.3/schema.json",
+  "files": {
+    "includes": ["src/**/*.{js,jsx,ts,tsx}"]
+  },
+  "linter": {
+    "enabled": true,
+    "rules": {
+      "recommended": false,
+      "correctness": {
+        "noUndeclaredDependencies": "error"
+      },
+      "suspicious": {
+        "noRedeclare": "error"
+      }
+    }
+  },
+  "formatter": {
+    "enabled": false
+  }
+}
