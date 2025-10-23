@@ -126,7 +126,7 @@ export default function AboutPage() {
                 <div className="flex-1 pb-8 border-l-2 border-gray-200 pl-6 -ml-2">
                   <h3 className="text-xl font-bold text-gray-900 mb-2">公司成立</h3>
                   <p className="text-gray-600">
-                    探客科技在上海成立，开始专注于外贸AI获客技术研发
+                    火火的（深圳）科技有限公司成立，开始专注于外贸AI获客技术研发
                   </p>
                 </div>
               </div>

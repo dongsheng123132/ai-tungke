@@ -193,8 +193,8 @@ export default function ContactPage() {
                       <Phone className="h-6 w-6 text-blue-600" />
                     </div>
                     <div>
-                      <h3 className="font-bold text-gray-900 mb-1">客服热线</h3>
-                      <p className="text-gray-600">400-888-8888</p>
+                      <h3 className="font-bold text-gray-900 mb-1">联系电话</h3>
+                      <p className="text-gray-600">17388733152</p>
                       <p className="text-sm text-gray-500 mt-1">周一至周五 9:00-18:00</p>
                     </div>
                   </div>
@@ -205,7 +205,7 @@ export default function ContactPage() {
                     </div>
                     <div>
                       <h3 className="font-bold text-gray-900 mb-1">电子邮箱</h3>
-                      <p className="text-gray-600">contact@tanke-ai.com</p>
+                      <p className="text-gray-600">hefangsheng@gmail.com</p>
                       <p className="text-sm text-gray-500 mt-1">24小时内回复</p>
                     </div>
                   </div>
@@ -216,8 +216,8 @@ export default function ContactPage() {
                     </div>
                     <div>
                       <h3 className="font-bold text-gray-900 mb-1">公司地址</h3>
-                      <p className="text-gray-600">上海市浦东新区</p>
-                      <p className="text-gray-600">张江高科技园区</p>
+                      <p className="text-gray-600">广东省深圳市南山区</p>
+                      <p className="text-gray-600">西丽大学城南山云谷综合楼103室</p>
                     </div>
                   </div>
 
