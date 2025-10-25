@@ -26,7 +26,7 @@ export default function HomePage() {
             
             <p className="text-lg mb-10 text-blue-50 max-w-3xl mx-auto leading-relaxed">
               遍历式地点检索 × AI联网搜索 × 行业数据综合评估<br />
-              定制版探迹升级方案，让外贸获客更智能、更精准、更高效
+              定制版探客升级方案，让外贸获客更智能、更精准、更高效
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">

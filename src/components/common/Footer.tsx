@@ -39,7 +39,7 @@ export default function Footer() {
                 to="/features"
                 className="block text-gray-400 hover:text-white transition-colors"
               >
-                功能
+                产品功能
               </Link>
               <Link
                 to="/solutions"
@@ -51,34 +51,29 @@ export default function Footer() {
                 to="/cases"
                 className="block text-gray-400 hover:text-white transition-colors"
               >
-                客户案例
+                成功案例
               </Link>
+              <Link
+                to="/demo"
+                className="block text-gray-400 hover:text-white transition-colors"
+              >
+                在线演示
+              </Link>
+              {/* 在线客服入口已移除 */}
             </div>
           </div>
 
           <div>
             <h3 className="text-lg font-semibold mb-4">联系我们</h3>
-            <div className="space-y-4 text-gray-400 text-sm">
-              <div className="flex items-start gap-2">
-                <Mail className="h-4 w-4 mt-0.5" />
-                <div>
-                  <div>hefangsheng@gmail.com</div>
-                  <div className="text-gray-500">24小时内回复</div>
-                </div>
+            <div className="space-y-3 text-gray-400 text-sm">
+              <div className="flex items-center gap-2">
+                <Mail className="h-4 w-4" /> contact@tungke.com
               </div>
-              <div className="flex items-start gap-2">
-                <Phone className="h-4 w-4 mt-0.5" />
-                <div>
-                  <div>17388733152</div>
-                  <div className="text-gray-500">周一至周五 9:00-18:00</div>
-                </div>
+              <div className="flex items-center gap-2">
+                <Phone className="h-4 w-4" /> +86 755-0000-0000
               </div>
-              <div className="flex items-start gap-2">
-                <MapPin className="h-4 w-4 mt-0.5" />
-                <div>
-                  <div>广东省深圳市南山区</div>
-                  <div className="text-gray-500">西丽大学城南山云谷综合楼103室</div>
-                </div>
+              <div className="flex items-center gap-2">
+                <MapPin className="h-4 w-4" /> 深圳市南山区科技园
               </div>
             </div>
           </div>
@@ -92,7 +87,7 @@ export default function Footer() {
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 hover:text-white"
               >
-                <Globe className="h-4 w-4" /> 探客 TUNGKE
+                <Globe className="h-4 w-4" /> 探客 TUNGKE 全球官网
               </a>
             </div>
           </div>

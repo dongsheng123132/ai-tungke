@@ -17,12 +17,12 @@ function MarkdownRenderer({ content }: { content: string }) {
   return <div dangerouslySetInnerHTML={{ __html: formattedContent }} />;
 }
 
-export default function AIChat() {
+const AIChat = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [messages, setMessages] = useState<ChatMessage[]>([]);
   const [input, setInput] = useState('');
   const [isLoading, setIsLoading] = useState(false);
-  const messagesEndRef = useRef<HTMLDivElement>(null);
+  const messagesEndRef = useRef<HTMLDivElement | null>(null);
   const abortControllerRef = useRef<AbortController | null>(null);
 
   const scrollToBottom = () => {
@@ -32,6 +32,11 @@ export default function AIChat() {
   useEffect(() => {
     scrollToBottom();
   }, [messages]);
+
+  // 已移除：URL 参数触发自动打开聊天窗口逻辑
+  useEffect(() => {
+    // 保持空副作用以兼容原结构
+  }, []);
 
   const handleSend = async () => {
     if (!input.trim() || isLoading) return;
@@ -206,4 +211,6 @@ export default function AIChat() {
       )}
     </>
   );
-}
+};
+
+export default AIChat;
