@@ -101,3 +101,41 @@ Vite、TypeScript、React、Supabase
 ## 了解更多
 
 您也可以查看帮助文档：[源码导出](https://cloud.baidu.com/doc/MIAODA/s/Xmewgmsq7)，了解更多详细内容。
+
+## 本地开发与推送步骤
+
+- 安装依赖：`pnpm install`（或 `npm install`/`yarn`，推荐 `pnpm`）
+- 本地开发：`pnpm dev`（当前使用 `vite.config.dev.ts`）
+- 代码检查：`pnpm lint`
+- 创建提交：
+  - `git add -A`
+  - `git commit -m "说明改动"`
+- 设置远程并推送：
+  - 查看分支：`git branch --show-current` → `main`
+  - 查看远程：`git remote -v` → `origin https://github.com/dongsheng123132/ai-tungke.git`
+  - 推送：`git push -u origin main`
+- 注意：在 PowerShell 下不要用 `&&` 连续执行，多条命令分开执行。
+
+### 为什么这次推送成功
+
+- 你的电脑已登录 GitHub（Git Credential Manager 缓存了凭据），首次授权后后续无需重复输入。
+- 远程地址正确设置为你的仓库：`origin https://github.com/dongsheng123132/ai-tungke.git`。
+- 当前分支为 `main`，和远程分支一致。
+- 本地已有提交记录（不是空仓库），因此推送可以直接完成。
+
+## Vercel 部署指南
+
+- 连接仓库：在 Vercel 选择 `New Project`，导入 GitHub 仓库 `dongsheng123132/ai-tungke`。
+- 构建设置：
+  - 框架：`Vite`
+  - 安装命令：自动（检测到 `pnpm-lock.yaml` 会使用 `pnpm install`）
+  - 构建命令：`pnpm build`
+  - 输出目录：`dist`
+- 环境变量：如需（例如 Supabase 等），在 Vercel 的 `Settings -> Environment Variables` 中配置对应键值。
+- 路由（SPA）：已提供 `vercel.json`，将所有路由重写到 `/index.html`，确保前端路由在生产环境正常工作。
+- 部署触发：每次推送到 `main` 会自动创建一个新的 Deployment；也可在 Vercel 上手动触发。
+
+### 本地预览生产构建
+
+- `pnpm build`
+- `pnpm preview`（默认端口 5174）

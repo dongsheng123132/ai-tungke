@@ -3,8 +3,9 @@
   "version": "0.0.1",
   "type": "module",
   "scripts": {
-    "dev": "echo 'Do not use this command, only use lint to check'",
-    "build": "echo 'Do not use this command, only use lint to check'",
+    "dev": "vite --config vite.config.dev.ts",
+    "build": "vite build",
+    "preview": "vite preview --port 5174",
     "lint": "tsgo -p tsconfig.check.json; npx biome lint; rules/check.sh"
   },
   "dependencies": {
