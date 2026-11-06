@@ -1,4 +1,7 @@
 # TUNGKE 探客 — 外贸AI获客平台
+
+作者 / Author：贺去病（贺方升 / Dosen）· [hequbing.com](https://www.hequbing.com)
+
 网站链接
     URL:https://www.tungke.com
 
