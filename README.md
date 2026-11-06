@@ -1,6 +1,6 @@
 # TUNGKE 探客 — 外贸AI获客平台
 
-作者 / Author：He Fangsheng (贺方升 / 贺去病; Dosen)· [hequbing.com](https://www.hequbing.com)
+作者 / Author：He Fangsheng (贺方升 / 贺去病; also known as Dosen)· [hequbing.com](https://www.hequbing.com)
 
 网站链接
     URL:https://www.tungke.com
